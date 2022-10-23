@@ -1,6 +1,7 @@
 ﻿using My_Projectt;
-//Dz 1.1
-#region
+
+#region Dz 1.1
+
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -9,20 +10,31 @@ int C = A / B;
 int D = A % B;
 Console.WriteLine(C);
 Console.WriteLine(D);*/
+
+#region c методом
+
+//Console.WriteLine(Variables.Division(11, 2));
+
 #endregion
 
-//Dz 1.2
-#region
+#endregion
+
+
+#region Dz 1.2
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
 int B = Convert.ToInt32(Console.ReadLine());
 int C = (5 * A + Convert.ToInt32(Math.Pow(B, 2)) / (B - A));
 Console.WriteLine(C);*/
-#endregion
 
-//Dz 1.3
-#region
+#region c методом
+//Console.WriteLine(Variables.Equation1(4, 7));
+
+
+#endregion
+#endregion
+#region Dz 1.3
 /*Console.WriteLine("Введите строку A");
 string A = Convert.ToString(Console.ReadLine());
 Console.WriteLine("Введите строку B");
@@ -33,10 +45,11 @@ A=B;
 B = C;
 Console.WriteLine("A= " + A);
 Console.WriteLine("B= " + B);*/
-#endregion
 
-//Dz 1.4
-#region
+
+#endregion
+#region Dz 1.4
+
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -46,10 +59,13 @@ int C = Convert.ToInt32(Console.ReadLine());
 int X=(C-B)/ A;
 Console.WriteLine("X= "+X);*/
 
+#region c методом
+//Console.WriteLine(Variables.Equation2(30, 6, 9));
 #endregion
 
-//Dz 1.5
-#region
+#endregion
+#region Dz 1.5
+
 /*Console.WriteLine("Введите число X1");
 int X1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число Y1");
@@ -62,10 +78,17 @@ int A = (Y2 - Y1) / (X2 - X1);
 int B = Y1 - A * X1;
 int X, Y;
 Console.WriteLine("Y="+A+"X+"+B);*/
+
+#region c методом
+//Variables.EquationofStraightLine(-54, 85, -6, 23);
 #endregion
 
-//Dz 2.1
-#region
+#endregion
+
+
+
+#region Dz 2.1
+
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -82,10 +105,12 @@ else
 {
     Console.WriteLine(A-B);
 }*/
-#endregion
 
-//Dz 2.2
-#region
+#region метод
+//Console.WriteLine(Conditions.Condition1(8, 4));
+#endregion
+#endregion
+#region Dz 2.2
 /*Console.WriteLine("Введите число X");
 int X = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число Y");
@@ -107,10 +132,12 @@ else
     Console.WriteLine("Точка принадлежит 4 четверти");
 }
 */
-#endregion
 
-//Dz 2.3
-#region
+#region метод
+//Conditions.WhichQuarter(25, -10);
+#endregion
+#endregion
+#region Dz 2.3
 /*Console.WriteLine("Введите число A ");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B ");
@@ -136,10 +163,10 @@ else
     Console.WriteLine(Math.Max(A, B));
 }
 */
-#endregion
 
-//Dz 2.4
-#region
+
+#endregion
+#region Dz 2.4
 /*Console.WriteLine("Введите число A ");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B ");
@@ -163,9 +190,7 @@ else
     Console.WriteLine("Ошибка!");
 }*/
 #endregion
-
-//Dz 2.5
-#region
+#region Dz 2.5
 /*Console.WriteLine("Vvedite chislo");
 int A = Convert.ToInt32(Console.ReadLine());
 int desatki = A / 10;
@@ -236,10 +261,15 @@ else if (A == 18)
     Console.WriteLine("восемнадцать ");
 else 
     Console.WriteLine("девятнадцать ");*/
+
+#region метод
+//Conditions.TwoDigitNumber(63);
+#endregion
 #endregion
 
-//Dz 3.1
-#region
+
+
+#region Dz 3.1
 /*Console.WriteLine("Введите число A ");
 int A=Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите степень B ");
@@ -250,10 +280,11 @@ for (int i = 0; i < B; i++)
     result *= A;
 }
 Console.WriteLine("{0}^{1}={2}",A,B,result);*/
+#region metod
+//Console.WriteLine(Cycles.GetPower(3, 3));
 #endregion
-
-//Dz 3.2
-#region
+#endregion
+#region Dz 3.2
 /*Console.WriteLine("Введите число A ");
 int A=Convert.ToInt32(Console.ReadLine());
 for(int i=1; i<=1000; i++)
@@ -263,10 +294,9 @@ for(int i=1; i<=1000; i++)
         Console.WriteLine(i);
     }                                                                                                                                                                                                                                                    
 }*/
-#endregion
 
-//Dz 3.3
-#region
+#endregion
+#region Dz 3.3
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 int kol = 0;
@@ -276,10 +306,12 @@ for (int i = 1; i < A; i++)
     kol += 1;
 }
 Console.WriteLine($"Количество чисел квадрат которых меньше {A} = " + kol);*/
-#endregion
 
-//Dz 3.4
-#region
+#region metod
+//Console.WriteLine(Cycles.AmountofNumbers(50));
+#endregion
+#endregion
+#region Dz 3.4
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 for (int i = 1; i < A; i++)
@@ -289,10 +321,11 @@ for (int i = 1; i < A; i++)
         Console.WriteLine(i);
     }
 }*/
+#region metod
+//Console.WriteLine(Cycles.GreatestCommonDivisor(12));
 #endregion
-
-//Dz 3.5
-#region
+#endregion
+#region Dz 3.5
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -323,10 +356,13 @@ else
     Console.WriteLine("Ошибка!");
 }
 Console.WriteLine(sum);*/
-#endregion
 
-//Dz 3.6  
-#region
+#region metod
+//Console.WriteLine(Cycles.SumofNumbers(3, 30));
+#endregion
+#endregion
+#region Dz 3.6
+
 /*Console.WriteLine("Введите число n");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("1");
@@ -340,10 +376,13 @@ for (int i = 2; i <= n; i++)
     i1 = i;
     Console.WriteLine(i);
 }*/
-#endregion
 
-//Dz 3.7
-#region
+#region metod
+//Console.WriteLine(Cycles.FibonacciSeries(15));
+#endregion
+#endregion
+#region Dz 3.7
+
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -362,12 +401,13 @@ while (A != B)
     }
 }
 Console.WriteLine($"Наибольший общий делитель {chislo1}, {chislo2} = {A}");*/
+#region metod
+//Console.WriteLine(Cycles.EuclidsAlgorithm(12, 26));
 #endregion
-
+#endregion
 //Dz 3.8 Ne sdelala:(
+#region Dz 3.9
 
-//Dz 3.9
-#region
 /*Console.WriteLine("Введите число A ");
 int A = Convert.ToInt32(Console.ReadLine());
 int kol = 0;
@@ -381,10 +421,12 @@ while(A!=0)
 }
 Console.WriteLine($"Количество нечетных чисел = {kol}");
 */
+#region metod
+//Console.WriteLine(Cycles.NumberofOddDigits(63));
 #endregion
+#endregion
+#region Dz 3.10
 
-//Dz 3.10
-#region
 /*Console.WriteLine("Введите число A ");
 int A = Convert.ToInt32(Console.ReadLine());
 int B = 0;
@@ -396,10 +438,12 @@ while (A!=0)
     A /= 10;
 }
 Console.WriteLine(B);*/
+#region metod
+//Console.WriteLine(Cycles.MirrorImage(1234));
 #endregion
+#endregion
+#region Dz 3.11
 
-//Dz 3.11  
-#region
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
@@ -488,30 +532,9 @@ else
     }
 }
 */
+#region metod
+//Cycles.EleventhTask(120,130);
 #endregion
-
+#endregion
 //Dz 3.12 Ne sdelala:(
-
-
-
-/*Console.WriteLine(Variables.Division(11, 2));
-Console.WriteLine(Variables.Equation1(4, 7));
-Console.WriteLine(Variables.Equation2(30, 6, 9));
-Variables.EquationofStraightLine(-54, 85, -6, 23);
-
-Console.WriteLine(Conditions.Condition1(8, 4));
-Conditions.WhichQuarter(25, -10);
-Conditions.TwoDigitNumber(63);
-
-Console.WriteLine(Cycles.GetPower(3, 3));
-Console.WriteLine(Cycles.AmountofNumbers(50));
-Console.WriteLine(Cycles.GreatestCommonDivisor(12));
-Console.WriteLine(Cycles.SumofNumbers(3, 30));
-Console.WriteLine(Cycles.FibonacciSeries(15));
-Console.WriteLine(Cycles.EuclidsAlgorithm(12,26));
-Console.WriteLine(Cycles.NumberofOddDigits(63));
-Console.WriteLine(Cycles.MirrorImage(1234));*/
-Cycles.EleventhTask(120,130);
-
-
 /*Console.WriteLine(Arrays.GettheMinimumElement(2, 6, 3));*/

@@ -12,12 +12,14 @@ namespace My_Projectt
         {
             return a / b;
         }
+
         public static int Equation1(int a, int b)     //1.2
         {
             int c = (5 * a + b * b) / (b - a);
             return c;
         }
-        public static int Equation2(int a, int b, int c)      //1.4
+
+        public static int Equation2(int a, int b, int c)     //1.4
         {
             int x = (c - b) / a;
             return x;

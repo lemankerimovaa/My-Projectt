@@ -8,6 +8,7 @@ namespace My_Projectt
 {
     public static class Conditions
     {
+
         public static int Condition1(int a, int b)    //2.1
         {
             if (a > b)
@@ -23,7 +24,8 @@ namespace My_Projectt
                 return a - b;
             }
         }
-        public static string WhichQuarter(int x, int y)   //2.2
+
+        public static string WhichQuarter(int x, int y)    //2.2
         {
             if (x > 0 && y > 0)
             {
@@ -39,13 +41,14 @@ namespace My_Projectt
             }
             else if (x > 0 && y < 0)
             {
-                 return "Точка принадлежит 4 четверти";
+                return "Точка принадлежит 4 четверти";
             }
-            else 
+            else
             {
                 return "Начало координата";
             }
         }
+
         public static string TwoDigitNumber(int A)      //2.5
         {
             int desatki = A / 10;
@@ -119,3 +122,5 @@ namespace My_Projectt
         }
     }
 }
+
+

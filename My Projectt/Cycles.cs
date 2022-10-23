@@ -17,6 +17,7 @@ namespace My_Projectt
             }
             return result;
         }
+
         public static int AmountofNumbers(double num)      //3.3
         {
             int amount = 0;
@@ -26,6 +27,7 @@ namespace My_Projectt
             }
             return amount;
         }
+
         public static double GreatestCommonDivisor(double num)      //3.4
         {
             for (int i = 2; i < num; i++)
@@ -37,6 +39,7 @@ namespace My_Projectt
             }
             return -1;
         }
+
         public static int SumofNumbers(int a, int b)      //3.5 
         {
             int sum = 0;
@@ -70,6 +73,7 @@ namespace My_Projectt
             }
             return j;
         }
+
         public static int FibonacciSeries(int n)    //3.6
         {
             return 1;
@@ -84,6 +88,7 @@ namespace My_Projectt
                 return i;
             }
         }
+
         public static int EuclidsAlgorithm(int a, int b)      //3.7
         {
             int chislo1 = a;
@@ -101,6 +106,7 @@ namespace My_Projectt
             }
             return a;
         }
+
         public static int NumberofOddDigits(int a)    //3.9
         {
             int amount = 0;
@@ -114,6 +120,7 @@ namespace My_Projectt
             }
             return amount;
         }
+
         public static int MirrorImage(int a)      //3.10
         {
             int b = 0;
@@ -160,6 +167,7 @@ namespace My_Projectt
             else
                 return -1;
         }
+
         public static int ChechkingDivisionbyTwo(int i)   //Ne Nashla Oshibku :(
         {
             int sum1 = 0;
