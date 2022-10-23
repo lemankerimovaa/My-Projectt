@@ -1,4 +1,5 @@
-﻿//Dz 1.1
+﻿using My_Projectt;
+//Dz 1.1
 #region
 /*Console.WriteLine("Введите число A");
 int A = Convert.ToInt32(Console.ReadLine());
@@ -324,16 +325,21 @@ else
 Console.WriteLine(sum);*/
 #endregion
 
-//Dz 3.6  Ne pravilno:(
+//Dz 3.6  
 #region
 /*Console.WriteLine("Введите число n");
 int n = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
-for (int i = 0; i <= n; i++)
+Console.WriteLine("1");
+Console.WriteLine("1");
+int i0 = 1;
+int i1 = 1;
+for (int i = 2; i <= n; i++)
 {
-    sum += i;
-}
-Console.WriteLine(sum);*/
+    i = i0 + i1;
+    i0 = i1;
+    i1 = i;
+    Console.WriteLine(i);
+}*/
 #endregion
 
 //Dz 3.7
@@ -487,9 +493,8 @@ else
 //Dz 3.12 Ne sdelala:(
 
 
-using My_Projectt;
 
-Console.WriteLine(Variables.Division(11, 2));
+/*Console.WriteLine(Variables.Division(11, 2));
 Console.WriteLine(Variables.Equation1(4, 7));
 Console.WriteLine(Variables.Equation2(30, 6, 9));
 Variables.EquationofStraightLine(-54, 85, -6, 23);
@@ -501,8 +506,12 @@ Conditions.TwoDigitNumber(63);
 Console.WriteLine(Cycles.GetPower(3, 3));
 Console.WriteLine(Cycles.AmountofNumbers(50));
 Console.WriteLine(Cycles.GreatestCommonDivisor(12));
-/*Console.WriteLine(Cycles.SumofNumbers(3, 30));*/
+Console.WriteLine(Cycles.SumofNumbers(3, 30));
+Console.WriteLine(Cycles.FibonacciSeries(15));
 Console.WriteLine(Cycles.EuclidsAlgorithm(12,26));
 Console.WriteLine(Cycles.NumberofOddDigits(63));
-Console.WriteLine(Cycles.MirrorImage(1234));
-/*Console.WriteLine(Cycles.EleventhTask(265,300));*/
+Console.WriteLine(Cycles.MirrorImage(1234));*/
+Cycles.EleventhTask(120,130);
+
+
+/*Console.WriteLine(Arrays.GettheMinimumElement(2, 6, 3));*/

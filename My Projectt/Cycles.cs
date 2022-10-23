@@ -37,7 +37,7 @@ namespace My_Projectt
             }
             return -1;
         }
-        public static int SumofNumbers(int a, int b)      //3.5 //Ne Nashla Oshibku :(
+        public static int SumofNumbers(int a, int b)      //3.5 
         {
             int sum = 0;
             if (a < b)
@@ -46,13 +46,15 @@ namespace My_Projectt
                 {
                     Cycles.CheckingDivisonbySeven(i);
                 }
+                return sum;
             }
             else if (a > b)
             {
                 for (int i = b; i < a; i++)
                 {
-                    Cycles.CheckingDivisonbySeven(i);
+                    Cycles.CheckingDivisonbySeven(i);  
                 }
+                return sum;
             }
             else
             {
@@ -67,6 +69,20 @@ namespace My_Projectt
                 add += j;
             }
             return j;
+        }
+        public static int FibonacciSeries(int n)    //3.6
+        {
+            return 1;
+            return 1;
+            int i0 = 1;
+            int i1 = 1;
+            for (int i = 2; i <= n; i++)
+            {
+                i = i0 + i1;
+                i0 = i1;
+                i1 = i;
+                return i;
+            }
         }
         public static int EuclidsAlgorithm(int a, int b)      //3.7
         {
@@ -111,7 +127,7 @@ namespace My_Projectt
             return b;
         }
 
-        /*public static void EleventhTask(int A, int B)     //3.11
+        public static int EleventhTask(int A, int B)     //3.11
         {
             if (A < B)
             {
@@ -119,25 +135,32 @@ namespace My_Projectt
                 {
 
                     Cycles.ChechkingDivisionbyTwo(i);
-
+                    return i;
                 }
+                return -1;
             }
             if (A > B)
             {
                 for (int i = B; i < A; i++)
                 {
                     Cycles.ChechkingDivisionbyTwo(i);
+                    return i;
                 }
+                return -1;
             }
-            else
+            else if (A == B)
             {
                 for (int i = B; ;)
                 {
                     Cycles.ChechkingDivisionbyTwo(i);
+                    return i;
                 }
+                return -1;
             }
+            else
+                return -1;
         }
-        public static int ChechkingDivisionbyTwo(int i)
+        public static int ChechkingDivisionbyTwo(int i)   //Ne Nashla Oshibku :(
         {
             int sum1 = 0;
             int sum2 = 0;
@@ -155,10 +178,12 @@ namespace My_Projectt
                 }
                 j /= 10;
             }
-            if (sum1 > sum2)
+            if (sum2 > sum1)
             {
                 return i;
             }
-        }*/
+            else
+                return -1;
+        }
     }
 }

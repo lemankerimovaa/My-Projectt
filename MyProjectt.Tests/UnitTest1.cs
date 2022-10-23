@@ -7,7 +7,6 @@ namespace MyProjectt.Tests
         [TestCase(11, 2, 5)]
         public void DivisionTests(int a, int b, int expected)   //1.1
         {
-
             int actual = Variables.Division(a, b);
             Assert.AreEqual(expected, actual);
         }
@@ -88,6 +87,12 @@ namespace MyProjectt.Tests
             int actual = Cycles.SumofNumbers(a,b);
             Assert.AreEqual(expected, actual);
         }
+        /*[TestCase(6,1,1,2,3,5,8)]     //kak ukazat otvet
+        public void FibonacciSeriesTest(int n, int expected)      //3.6
+        {
+            int actual = Cycles.FibonacciSeries(n);
+            Assert.AreEqual(expected, actual);
+        }*/
         [TestCase(18, 44, 2)]
         public void EuclidsAlgorithmTests(int a, int b, int expected)     //3.7
         {
@@ -109,7 +114,7 @@ namespace MyProjectt.Tests
             int actual = Cycles.MirrorImage(a);
             Assert.AreEqual(expected, actual);
         }
-       /* [TestCase(120, 125, 120, 122, 124)]
+        /*[TestCase(120, 125, 120, 122, 124)]   //kak ukazat otvet
         public void EleventhTaskTests(int a, int b, int expected)     //3.11
         {
             int actual = Cycles.EleventhTask(a,b);
