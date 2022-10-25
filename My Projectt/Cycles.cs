@@ -47,7 +47,7 @@ namespace My_Projectt
             {
                 for (int i = a; i < b; i++)
                 {
-                    Cycles.CheckingDivisonbySeven(i);
+                    sum+=Cycles.CheckingDivisonbySeven(i);
                 }
                 return sum;
             }
@@ -55,7 +55,7 @@ namespace My_Projectt
             {
                 for (int i = b; i < a; i++)
                 {
-                    Cycles.CheckingDivisonbySeven(i);  
+                    sum+=Cycles.CheckingDivisonbySeven(i);  
                 }
                 return sum;
             }
@@ -71,7 +71,7 @@ namespace My_Projectt
             {
                 add += j;
             }
-            return j;
+            return add;
         }
 
         public static int FibonacciSeries(int n)    //3.6
@@ -134,64 +134,61 @@ namespace My_Projectt
             return b;
         }
 
-        public static int EleventhTask(int A, int B)     //3.11
+        public static void EleventhTask(int A, int B)     //3.11
         {
             if (A < B)
             {
                 for (int i = A; i < B; i++)
                 {
-
-                    Cycles.ChechkingDivisionbyTwo(i);
-                    return i;
+                    if(Cycles.ChechkingDivisionbyTwo(i)!=0)
+                    {
+                         Console.WriteLine(Cycles.ChechkingDivisionbyTwo(i));
+                    }
                 }
-                return -1;
+                  
             }
-            if (A > B)
+            else if (A > B)
             {
                 for (int i = B; i < A; i++)
                 {
-                    Cycles.ChechkingDivisionbyTwo(i);
-                    return i;
+                    if (Cycles.ChechkingDivisionbyTwo(i) != 0)
+                    {
+                        Console.WriteLine(Cycles.ChechkingDivisionbyTwo(i));
+                    }
                 }
-                return -1;
             }
-            else if (A == B)
+            else 
             {
-                for (int i = B; ;)
-                {
-                    Cycles.ChechkingDivisionbyTwo(i);
-                    return i;
-                }
-                return -1;
+                Console.WriteLine("net diapazona");
             }
-            else
-                return -1;
+           
         }
 
         public static int ChechkingDivisionbyTwo(int i)   //Ne Nashla Oshibku :(
         {
-            int sum1 = 0;
-            int sum2 = 0;
+            int sumCet = 0;
+            int sumNecet = 0;
             int j = i;
-            while (j > 0)
+            while (j != 0)
             {
                 int ost = j % 10;
                 if (ost % 2 == 0)
                 {
-                    sum1 += ost;
+                    sumCet += ost;
                 }
                 else
                 {
-                    sum2 += ost;
+                    sumNecet += ost;
                 }
                 j /= 10;
             }
-            if (sum2 > sum1)
+            if (sumCet > sumNecet)
             {
                 return i;
             }
             else
-                return -1;
+                return 0;
         }
+       
     }
 }

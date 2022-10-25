@@ -530,11 +530,23 @@ else
         }
 
     }
-}
-*/
+}*/
+
 #region metod
 //Cycles.EleventhTask(120,130);
 #endregion
 #endregion
 //Dz 3.12 Ne sdelala:(
-/*Console.WriteLine(Arrays.GettheMinimumElement(2, 6, 3));*/
+
+int n= Convert.ToInt32(Console.ReadLine());
+int [] array= new int[n];
+for (int i = 0; i < n; i++)
+{
+    array[i] = Convert.ToInt32(Console.ReadLine());
+}
+int min= Arrays.GettheMinimumElement(array);
+Console.WriteLine(min);
+
+
+
+
