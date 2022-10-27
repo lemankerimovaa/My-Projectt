@@ -267,8 +267,6 @@ else
 #endregion
 #endregion
 
-
-
 #region Dz 3.1
 /*Console.WriteLine("Введите число A ");
 int A=Convert.ToInt32(Console.ReadLine());
@@ -538,15 +536,19 @@ else
 #endregion
 //Dz 3.12 Ne sdelala:(
 
-int n= Convert.ToInt32(Console.ReadLine());
+/*int n = Convert.ToInt32(Console.ReadLine());    //3.6
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine(Arrays.Fibonacci(n)[i]);
+}*/
+
+/*int n= Convert.ToInt32(Console.ReadLine());     //4.1
 int [] array= new int[n];
 for (int i = 0; i < n; i++)
 {
     array[i] = Convert.ToInt32(Console.ReadLine());
 }
 int min= Arrays.GettheMinimumElement(array);
-Console.WriteLine(min);
-
-
+Console.WriteLine(min);*/
 
 

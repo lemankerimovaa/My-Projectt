@@ -87,7 +87,7 @@ namespace My_Projectt
                 i1 = i;
                 return i;
             }
-        }
+        }                                                                 
 
         public static int EuclidsAlgorithm(int a, int b)      //3.7
         {
